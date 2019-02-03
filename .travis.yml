@@ -9,3 +9,16 @@ before_install:
 
 script:
   - docker run -d bigiayomide/docker-angular
+
+deploy: 
+  provider: elasticbeanstalk
+  region:  "us-west-2"
+  app: "docker-angular"
+  env: "DockerAngular-env"
+  bucket_name: "elasticbeanstalk-us-west-2-734462768959"
+  bucket_path: "docker-angular"
+  on:
+    branch: master
+  access_key_id: $
+  secret_access_key: "AWS_ACCESS_KEY"
+    secure: "$AWS_SECRET_KEY"
