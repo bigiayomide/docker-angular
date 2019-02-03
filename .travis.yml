@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-  - docker run bigiayomide/docker-angular
+  - docker run -d bigiayomide/docker-angular
