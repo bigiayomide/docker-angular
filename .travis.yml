@@ -9,4 +9,4 @@ before_install:
 
 
 script:
-  - docker run bigiayomide/docker-angular ng test --watch=false --no-progress
+  - docker run bigiayomide/docker-angular npm test
