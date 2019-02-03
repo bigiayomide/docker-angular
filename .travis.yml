@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-  - docker run bigiayomide/docker-angular npm test
+  - docker run bigiayomide/docker-angular
