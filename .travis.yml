@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build . -t bigiayomide/docker-angular
+  - docker build . -t bigiayomide/docker-angular -f Dockerfile.dev
 
 
 script:
